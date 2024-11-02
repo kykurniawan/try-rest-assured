@@ -16,16 +16,16 @@ public class ExampleTest {
 
     @Before
     public  void setup() {
-        RestAssured.baseURI = "https://svc.pamafix-dev.dot.co.id";
+        RestAssured.baseURI = "";
     }
 
     @Test
     public void testLogin() throws JsonProcessingException {
         LoginRequestDto dto = new LoginRequestDto();
-        dto.userId = "9c968871-fbd4-41de-916b-a958e3765cd2";
-        dto.roleId = "71b136bc-cb1c-49cf-af18-a6808d253068";
-        dto.applicationId = "5b8428be-eb38-432e-b825-b851e07d1745";
-        dto.groupId = "d0a3fe11-012d-42aa-a46a-4a9d84ffefe5";
+        dto.userId = "";
+        dto.roleId = "";
+        dto.applicationId = "";
+        dto.groupId = "";
 
         ObjectMapper mapper = TestHelper.getMapper();
         String token = TestHelper.getToken("", "");
